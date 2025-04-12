@@ -1,70 +1,169 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Creative | وكالة دعاية وإعلان</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fdfdfd;
-            color: #222;
-            direction: rtl;
+            background-color: #1a1a1a;
+            color: #fff;
         }
         header {
-            background-color: #333;
-            color: white;
+            background-color: #2c2c2c;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: #ff3ea5;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #ccc;
+        }
+        section.services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            gap: 20px;
+        }
+        .service {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service h3 {
+            text-align: center;
+            padding: 15px;
+            margin: 0;
+            color: #ff6fb5;
+        }
+        footer {
+            background-color: #111;
             padding: 20px;
             text-align: center;
         }
-        section {
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-        .contact a {
-            display: inline-block;
-            margin: 10px;
+        footer a {
+            color: #ff3ea5;
             text-decoration: none;
-            color: #fff;
-            background-color: #007bff;
-            padding: 10px 15px;
-            border-radius: 5px;
+            margin: 0 10px;
+            font-size: 1.4rem;
         }
-        footer {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 15px;
-            font-size: 14px;
+        footer p {
+            margin-top: 10px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        .slick-slide {
+            transition: transform 0.3s ease;
+        }
+        .slick-slide:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Creative</h1>
         <p>وكالة دعاية و إعلان متخصصة في كافة أعمال الدعاية و الإعلان داخل المملكة العربية السعودية و مقرها الرياض</p>
     </header>
-    
+
+    <!-- Slider Section -->
     <section>
-        <h2>خدماتنا</h2>
-        <ul>
-            <li>تصميم إعلانات احترافية</li>
-            <li>إدارة حسابات التواصل الاجتماعي</li>
-            <li>تصميم مطبوعات (فلايرات - بروشورات - بطاقات)</li>
-            <li>إعلانات خارجية وداخلية</li>
-        </ul>
+        <div class="slider">
+            <div><img src="https://source.unsplash.com/1200x500/?advertising" alt="خدمة إعلانات" /></div>
+            <div><img src="https://source.unsplash.com/1200x500/?branding" alt="خدمة براندينغ" /></div>
+            <div><img src="https://source.unsplash.com/1200x500/?printing" alt="خدمة طباعة" /></div>
+            <div><img src="https://source.unsplash.com/1200x500/?signage" alt="خدمة لوحات إعلانية" /></div>
+        </div>
     </section>
 
-    <section class="contact">
-        <h2>تواصل معنا</h2>
-        <a href="https://wa.me/966547739079" target="_blank">واتساب</a>
-        <a href="https://www.instagram.com/creative.no.01/" target="_blank">انستغرام</a>
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?advertising" alt="لوحات إعلانية">
+            <h3>لوحات إعلانية</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?signage" alt="حروف بارزة">
+            <h3>حروف بارزة</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?branding" alt="كلادينج">
+            <h3>كلادينج</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?printing" alt="مطبوعات ورقية">
+            <h3>مطبوعات ورقية</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?box" alt="بوكسات">
+            <h3>بوكسات</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?bags" alt="أكياس">
+            <h3>أكياس</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?stickers" alt="أستيكر">
+            <h3>أستيكر</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?banner" alt="بنر">
+            <h3>بنر</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?stamp" alt="أختام">
+            <h3>أختام</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?business-card" alt="كروت">
+            <h3>كروت</h3>
+        </div>
+        <div class="service">
+            <img src="https://source.unsplash.com/400x300/?marketing" alt="كل مايخص الدعاية و الإعلان">
+            <h3>كل مايخص الدعاية و الإعلان</h3>
+        </div>
     </section>
 
     <footer>
-        &copy; 2025 Creative. جميع الحقوق محفوظة.
+        <a href="https://wa.me/966547739079" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/creative.no.01/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <p>&copy; 2025 Creative. جميع الحقوق محفوظة.</p>
     </footer>
+
+    <!-- Script to load the slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                arrows: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: true
+            });
+        });
+    </script>
+
 </body>
 </html>
